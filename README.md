@@ -23,7 +23,7 @@ Presence or absence of cardiovascular disease | Target Variable | cardio | binar
 
 ---
 ## Model Info
-The model is densely connected feedforward Neural Network. The .ipynb has a more extensive explanation of the following info.
+The model is densely connected feedforward Neural Network. The Jupyter Notebook has a more extensive explanation of the following info.
 
 ### Activation Functions:
 **relu**
