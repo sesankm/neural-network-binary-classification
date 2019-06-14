@@ -25,8 +25,6 @@ Physical activity | Subjective Feature | active | binary |<br>
 Presence or absence of cardiovascular disease | Target Variable | cardio | binary |<br>
 
 ---
----
-
 ## Model Info
 The model is densely connected feedforward Neural Network
 
@@ -34,7 +32,7 @@ The model is densely connected feedforward Neural Network
 **relu**
 <br> The vanishing gradient problem: the gradients of some activation functions becoming increasingly smaller as the number of hidden layers increases. This is problematic because the parameters in the neural network won't be tuned effectively.
 <br>ReLU overcomes this problem. Formula:
->$R(x) = 
+$R(x) = 
  \begin{Bmatrix}
   x & x > 0 \\
   0 & x <= 0 
@@ -44,14 +42,14 @@ Since the ReLU has a range of [0, $\infty$], gradients won't diminish.
 
 **sigmoid**
 <br>Activation function used in the output layer. Effective for classification problems. Formula:
->$S(x) = \LARGE\frac{1}{1+e^{-x}}$
+$S(x) = \LARGE\frac{1}{1+e^{-x}}$
 
 ### Loss Function:
 **Binary Crossentropy**
 <br>Cross entropy is calculated by finding the predicted probability (the probability of classification being correct based on given data). Larger predicted probabilities yeild lower losses. Formula:
->$Loss = −(y\cdot log(p)+(1−y) \cdot log(1−p))$
-><br>y: whether or not classification was correct
-><br>p: predicted probability
+$Loss = −(y\cdot log(p)+(1−y) \cdot log(1−p))$
+<br>y: whether or not classification was correct
+<br>p: predicted probability
 
 The only difference between the cross entropy and binary cross entropy loss functions is that binary cross entropy includes a sigmoid activation function.
 
