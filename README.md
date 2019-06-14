@@ -1,5 +1,4 @@
 # neural-network-binary-classification
----
 
 ## The objective is to predict whether or not individual has a cardiovascular disease.
 
